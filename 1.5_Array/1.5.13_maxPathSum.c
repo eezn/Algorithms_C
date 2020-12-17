@@ -1,3 +1,6 @@
+#define max(a, b) (((a) > (b)) ? (a) : (b))
+
+// O(n), O(n)
 int maxPathSum(int arr1[], int size1, int arr2[], int size2)
 {
     int i = 0, j = 0;

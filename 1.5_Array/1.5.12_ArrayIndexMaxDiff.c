@@ -1,3 +1,5 @@
+#define max(a, b) (((a) > (b)) ? (a) : (b))
+
 // brute force: O(n^2), O(1)
 int ArrayIndexMaxDiff(int arr[], int size)
 {
