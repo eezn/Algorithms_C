@@ -18,11 +18,6 @@ void swap(int arr[], int i, int j)
     arr[j] = tmp;
 }
 
-int arrlen(int arr[])
-{
-    return (sizeof(arr) / sizeof(int));
-}
-
 int less(int value1, int value2)
 {
     return (value1 < value2);
