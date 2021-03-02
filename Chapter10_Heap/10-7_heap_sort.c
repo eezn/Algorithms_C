@@ -34,4 +34,4 @@ void HeapSort(int arr[], int size, int inc)
  * 힙 정렬은 안정 정렬이 아니며 배열을 정렬하는 데 추가 공간을 요구하지 않음
  * 
  * 안정 정렬 :  
-*/
+ */
