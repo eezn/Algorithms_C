@@ -7,6 +7,7 @@ void percolateDown(int *a, int position, int size, int isMinHeap)
 	int small = -1;
 	int temp;
 
+	/* lChild 와 rChild 둘 중 더 작은 값(MinHeap의 경우)을 갖는 노드의 인덱스를 small에 저장 */
 	if (lChild < size) {
 		small = lChild;
 	}
@@ -15,6 +16,8 @@ void percolateDown(int *a, int position, int size, int isMinHeap)
 		small = rChild;
 	}
 
+	/* small = -1 인 상태이면 부모 노드가 가장 작은 값(MinHeap의 경우)이므로 최소힙을 만족 */
+	/* small != -1 이면 부모 노드 보다 자식 노드에 더 작은 값이 있으므로 swap()을 수행 */
 	if (small != -1 && comp(a[position], a[small], isMinHeap)) {
 		temp = a[position];
 		a[position] = a[small];
