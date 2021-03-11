@@ -10,7 +10,7 @@
 typedef struct graph
 {
 	int count;
-	int adj;
+	int **adj;
 } Graph;
 
 void graphInit(Graph *gph, int count)
