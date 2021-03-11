@@ -1,4 +1,5 @@
 /* 고정된 길이 배열로 구현된 stack */
+#define MAX_CAPACITY 10
 
 
 typedef struct stack
@@ -35,7 +36,7 @@ void StackPush(Stack *stk, int value)
 {
 	if (stk->top < MAX_CAPACITY - 1) {
 		stk->top++;
-		stk->data[stk->top] == value;
+		stk->data[stk->top] = value;
 	}
 	else {
 		printf("stack overflow\n");
